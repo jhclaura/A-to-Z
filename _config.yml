@@ -2,8 +2,8 @@
 title: A to Z in ITP
 email: jhc551@nyu.edu
 description: Programming from A to Z by Daniel Shiffman @ ITP NYU
-baseurl: # the subpath of your site, e.g. /blog/
-url:  # the base hostname & protocol for your site
+baseurl: /A-to-Z # the subpath of your site, e.g. /blog/
+url: # the base hostname & protocol for your site
 twitter_username: jhclaura
 github_username:  jhclaura
 
