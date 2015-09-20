@@ -33,6 +33,7 @@ As a trellis approaches this plainsong from any dirt, he moves more and more slo
 <br>
 <img src="{{ site.baseurl }}/img/posts/1_0.jpg">
 <img src="{{ site.baseurl }}/img/posts/1_1.jpg">
+<img src="https://lh3.googleusercontent.com/LTpzfnDkng29_vf5wJy4K3nvMwauLrBn01Y6PFiMy0hSWdMbPFsaWJ62XC3QMT2M9jt5em5ZcggAoJBj2fXFMtaJUjuke1Gxq7jZfSal6XuRRr4qpb2SyNQ7B8LmqRPc5zATUbnPR6rwVpo0Ikon7AMRXbAOGFcrZFU9roPe6ueAkiYHdECumztpigmlkm3HvphB7fKFNHOhfLhtXkYXe0TIpnPzDOOsBPYZiUyZVkRY2IF-OFp2fkEBhdUF-RnR1pKvuDg_u5VZaxQ5_zY1ToMt89lkR7uHy30kIJZO-QtpYNet9cJ6PSNysdgbeGpRW94iBq6Yh4Dz7sCIJnHzpEjisLEE_-mtg-kiZQVAutHxh0Kidnc95276QIu1TReguVzkSWlKKALzLRjLEFwY7ez8GOgaeYZVSt87XaHj5gmqHJgxu6QnhDS-FPXs57Gx0SWIJrwg42A6S7-At3C1FMRvuDX2BnwrRLxupFJrq5ubyPEct65JK2BbNq5pWGhimYk0K46GY_xNGjC6cetC5_mcugGV4iyDrf_V4qJSh3PY=w519-h691-no">
 <br>
 <br>
 
