@@ -14,7 +14,7 @@ highlighter: pygments
 
 # Pagination
 paginate: 15
-paginate_path: "/blog/page:num/"
+paginate_path: "/A-to-Z/page:num/"
 
 
 collections:
