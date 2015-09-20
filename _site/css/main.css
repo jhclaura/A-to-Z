@@ -148,6 +148,25 @@ pre {
   clear: both; }
 
 /**
+ * Lauraaa   **********************************************************
+ */
+div.poem {
+  margin-top: 2em;
+  font-family: Ubuntu Mono;
+  padding: 2em;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.75; }
+
+div.poem-HL {
+  margin-top: 2em;
+  font-family: Ubuntu Mono;
+  padding: 2em;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.75; }
+
+/**
  * Site header   **********************************************************
  */
 .site-header {

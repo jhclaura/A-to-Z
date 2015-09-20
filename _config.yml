@@ -18,11 +18,11 @@ paginate_path: "/A-to-Z/page:num/"
 
 
 collections:
-  portfolio:
+  text:
     output: true
-    permalink: /portfolio/:path/
-  poetry:
+    permalink: /text/:path/
+  thing:
     output: true
-    permalink: /poetry/:path/
+    permalink: /thing/:path/
 
 

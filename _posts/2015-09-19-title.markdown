@@ -1,14 +1,15 @@
 ---
 layout: post
 title:  github page setup
-date:   2015-09-19 22:40:16
+date:   2015-09-19 22:40
 description: path redirect nightmare with jekyll
 ---
 SPEND SO MUCH TIME ON DEBUGGING JEKYLL!!! I used Github page and Jekyll theme for thesis <a href="http://jhclaura.github.io/MASK">MASK</a>, but apparently I forgot them all? Debugging is like you jump into a black hole and lose the sense of time...
 
-Here are some useful lists if you want to use Jekyll theme. It's actually not that difficult, just have to be careful about the path setting, eg. {{ "PATH/NAME" | prepend: site.baseurl }}. WTH is that right?
-
+Here are some useful lists if you want to use Jekyll theme.
 <ul>
 	<li><a href="https://help.github.com/articles/using-jekyll-with-pages/">Using Jekyll with Github Pages</a></li>
 	<li><a href="http://jekyllthemes.org/">Free Jekyll themes</a></li>
 </ul>
+
+It's actually not that difficult, just have to be careful about the path setting, eg. <i>{ { PATH/NAME , prepend : site.baseurl } }</i>. WTH is that?

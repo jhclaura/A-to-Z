@@ -5,7 +5,7 @@ title: thing
 description: ☞ results / what / ever / we / want
 ---
 
-{% for project in site.portfolio %}
+{% for project in site.thing %}
 <div class="project ">
     <div class="thumbnail">
         <a href="{{ site.baseurl }}{{ project.url }}">
