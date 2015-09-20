@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /input/
-title: input | text
+permalink: /text/
+title: text
 description: ☞ resources / data / inspiration
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /output/
-title: output | thing
+permalink: /thing/
+title: thing
 description: ☞ results / what / ever / we / want
 ---
 
