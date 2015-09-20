@@ -6,9 +6,9 @@ permalink: /about/
 <img class="col one right" src="{{ "/img/meInBrainS.png" | prepend: site.baseurl }}">
 
 <br/>
-Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" target="blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture "prof_pic.jpg" and put it in the img folder. 
+Hi I'm Laura Juo-Hsin Chen! I enjoys realizing fantasy, with mixed virtual reality, doodle, and lots of handcrafts. My latest project is <a href="http://jhclaura.github.io/MASK" target="blank">MASK</a>, a collection of multi-user virtual reality masks that explore identity shifting.
 
-Link to your social media connections, too. This theme is set up to use <a href="http://fortawesome.github.io/Font-Awesome/" target="blank">Font Awesome icons</a>, like the ones below. Add your facebook, twitter, linkedin, or just disable all of them. 
+Here is the place I document things of <a href="https://github.com/shiffman/A2Z-F15">Programming From A to Z</a>, a class taught by <a href="http://shiffman.net/">Daniel Shiffman</a> in <a href="https://tisch.nyu.edu/itp">ITP</a>.
 
 
 <br/>
