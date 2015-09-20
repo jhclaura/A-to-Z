@@ -4,7 +4,7 @@ email: you@example.com
 description: > # this means to ignore newlines until "baseurl:"
   A simple, whitespace, helvetica based portfolio theme.
 baseurl: /A-to-Z # the subpath of your site, e.g. /blog/
-url: http://jhclaura.github.io/A-to-Z # the base hostname & protocol for your site
+url: http://jhclaura.github.io # the base hostname & protocol for your site
 twitter_username: twitter_username
 github_username:  github_username
 
