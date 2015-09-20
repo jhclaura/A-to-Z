@@ -1,7 +1,8 @@
 ---
 layout: page
-title: portfolio
-permalink: /portfolio/
+permalink: /output/
+title: output | thing
+description: ☞ results / what / ever / we / want
 ---
 
 {% for project in site.portfolio %}

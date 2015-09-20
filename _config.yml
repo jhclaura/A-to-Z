@@ -1,12 +1,12 @@
 # Site settings
-title: *folio
-email: you@example.com
+title: LaurA to Z
+email: jhclaura@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A simple, whitespace, helvetica based portfolio theme.
+  A place for Programming From A to Z, by Daniel Shiffman, Fall 2015.
 baseurl: /A-to-Z # the subpath of your site, e.g. /blog/
 url: http://jhclaura.github.io/A-to-Z # the base hostname & protocol for your site
-twitter_username: twitter_username
-github_username:  github_username
+twitter_username: jhclaura
+github_username:  jhclaura
 
 # Build settings
 markdown: kramdown
