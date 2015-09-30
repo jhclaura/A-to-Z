@@ -177,3 +177,22 @@ function startButton(event){
 	recog_timestamp = event.timeStamp;
 	time = Date.now();
 }
+
+function startButton(event){
+	// stop
+	if(recognizing){
+		console.log("final_script: " + final_script);
+		recognition.stop();
+		theButton.textContent = "start";
+		return;
+	}
+
+	// restart
+	final_script = "";
+	recognition.start();
+	theButton.textContent = "stop";
+
+	start_timestamp = event.timeStamp;
+	recog_timestamp = event.timeStamp;
+	time = Date.now();
+}

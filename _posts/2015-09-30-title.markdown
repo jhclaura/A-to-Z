@@ -11,7 +11,9 @@ OK. So it'd be a website that will turn your miserable and moody day into a spec
 
 == manipulate thus new meaning of life ===
 
-== test: voice to script ==
+<img src="{{ site.baseurl }}/img/posts/firstTest.png">
+
+== test: {my first voice to script} ==
 
 	Hi is everything alright
 	ok
