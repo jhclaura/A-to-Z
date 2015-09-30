@@ -160,7 +160,6 @@ function update() {
 }
 
 function startButton(event){
-
 	// stop
 	if(recognizing){
 		console.log("final_script: " + final_script);
