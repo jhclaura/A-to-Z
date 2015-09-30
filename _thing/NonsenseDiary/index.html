@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nonsense Diary</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<h1>
+			Nonsense Diary
+		</h1>
+
+		<!-- 212, 646,
+		John jon jon jonathan j.* -->
+		<div class="buttonHolder">
+			Talk about what happened today.
+			<button id="start_button" onclick="startButton(event)" style="">Start</button>
+		</div>
+
+		<div id="results">
+			<span id="final_span" class="final" style="color: #ff0000;"></span>
+			<span id="interim_span" class="interim"></span>
+			<br>
+			<span id="my_span" class="mySpan"></span>
+		</div>
+
+		<script type="text/javascript" src="js/lib/rita.min.js"></script>
+		<script type="text/javascript" src="js/lib/swagger-client.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/regex.js"></script>
+
+		<script type="text/javascript">
+			init();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+/* font */
+@font-face{
+	font-family: laura;
+	src: url(Lauraaa.ttf);
+}
+
+body{
+	background: #24ffc8;
+}
+
+h1{
+	font-family: laura;
+	font-size: 5em;
+	text-align: center;
+}
+
+.buttonHolder{
+	text-align: center;
+}

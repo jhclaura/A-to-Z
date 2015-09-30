@@ -1,0 +1,10 @@
+---
+layout: post
+title:  nonsense diary test
+date:   2015-09-30 12:40
+description: first result of the attempt
+---
+
+AND I FORGOT TO DOCUMENT IT SHIT.
+
+OK
