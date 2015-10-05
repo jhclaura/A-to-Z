@@ -7,8 +7,8 @@ date: 2015-09-23 17:59:00
 Here are the place how my Nonsense Diary gets to you know, before it interprets you.
 
 
-##{my first voice to script}
-
+#{my first voice to script}
+<div class="poem">
 	Hi is everything alright
 	ok
 	I'm ready
@@ -27,10 +27,10 @@ Here are the place how my Nonsense Diary gets to you know, before it interprets 
 	you decide if you feel it can you feel
 	hello
 	it is over
+</div>
 
-
-##{about how you should talk to the diary}
-
+#{about how you should talk to the diary}
+<div class="poem">
 	Test test
 	someone just open the door and close it
 	so rude
@@ -47,5 +47,5 @@ Here are the place how my Nonsense Diary gets to you know, before it interprets 
 	hope these mountains to hurry understand what you are talking about you trying to see what anyone
 	and they will make your life better
 	that's it
-
+</div>
 
