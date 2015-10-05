@@ -16,11 +16,11 @@ OK. So it'd be a website that will turn your miserable and moody day into a spec
 tech note
 <li>web speech api</li> - https://github.com/GoogleChrome/webplatform-samples/blob/master/webspeechdemo/webspeechdemo.html
 <li>regex</li> - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
-<li>splice</li> -
-<code>//At position 2, remove 2 items:
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.splice(2, 2);
-//The result of fruits will be:
+<li>splice</li>
+<code>//At position 2, remove 2 items:<br>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+fruits.splice(2, 2);<br>
+//The result of fruits will be:<br>
 //Banana,Orange</code>
 
 <!-- 
