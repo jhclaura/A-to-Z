@@ -7,10 +7,11 @@ date: 2015-09-23 17:59:00
 Here are the place how my Nonsense Diary gets to you know, before it interprets you.
 
 
+
 #{my first voice to script}
 <div class="poem">
-	Hi is everything alright
-	ok
+	Hi is everything alright\n
+	ok\n
 	I'm ready
 	so this is the diary about nonsense the main ideas.
 	You talk about yourself
@@ -28,6 +29,8 @@ Here are the place how my Nonsense Diary gets to you know, before it interprets 
 	hello
 	it is over
 </div>
+
+
 
 #{about how you should talk to the diary}
 <div class="poem">
