@@ -35,6 +35,13 @@
 		</div>
 
 		<script type="text/javascript">
+
+			/* Socket Server - WS */
+			var socket = null;
+			var socketOpened = false;
+
+			var host, ws;
+
 			// Parse
 				// Parse.initialize("gYvmaEMoRvvcAazCoOIS9M2pI7fJzm4tqpdtdDT6", "MQxNPuuDvuMMUHzrzns79nXlXAWYh2BrIsAmMr0u");
 				// var TestObject = Parse.Object.extend("TestObject");
@@ -50,8 +57,59 @@
 				// } );
 
 
-
+			connectSocket();
 			init();
+
+			function connectSocket() {
+				host = location.origin.replace(/^http/, 'ws');
+				ws = new WebSocket(host);
+
+				ws.open = function() {
+					console.log('Browsers are connected!');
+
+				};
+
+				ws.onmessage = function(msg) {
+					var data = JSON.parse(msg.data);
+
+					if(data.type == 'afterExamined'){
+						console.log('Got data back from server: ' + data.text);
+						resultHolder.push(data.text);
+					}
+				};
+
+				//
+				socketOpened = true;
+			}
+
+			// WS syncing issue
+			// http://stackoverflow.com/questions/23898477/tornado-websockets-invalidstateerror-still-in-connecting-state
+			//but has better solution... e.g. promises
+			function sendMessage(msg) {
+		        waitForSocketConnection(ws, function() {
+		            ws.send( msg );
+		        });
+
+		        // console.log('* sendMessage');
+		    };
+
+			function waitForSocketConnection(socket, callback){
+			        setTimeout(
+			            function(){
+			                if (socket.readyState === 1) {
+			                    if(callback !== undefined){
+			                        callback();
+
+			                        // console.log('* callback');
+			                    }
+			                    return;
+			                } else {
+			                    waitForSocketConnection(socket,callback);
+			                }
+			            }, 5);
+
+			        // console.log('* waitForSocketConnection');
+			    };
 		</script>
 	</body>
 </html>

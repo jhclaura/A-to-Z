@@ -4,9 +4,11 @@ var recog_timestamp, time;
 var recognizing = false;
 var recognition;
 var theButton;
-var pauseCount = 0;
+var pauseCount = 0, pauseTime = 900;
 var tmpString1 = '', tmpString2 = '';
 var firstHappened = false, firstHappened2 = false;
+
+var forExaminate = [], resultHolder = [];
 
 function init() {
 
@@ -65,8 +67,8 @@ function init() {
 					}
 					// console.log(event.results[i][0].transcript);
 
-					console.log(interim_transcript);
-					console.log(event.timeStamp);
+					// console.log(interim_transcript);
+					// console.log(event.timeStamp);
 				};
 
 				//display on the website
@@ -96,7 +98,6 @@ function init() {
 
 	// Swagger-js
 
-
 	//
 	animate();			
 }
@@ -110,9 +111,9 @@ function animate() {
 function update() {
 
 
-	if( recognizing && (time - recog_timestamp>1000) ) {
+	if( recognizing && (time - recog_timestamp>pauseTime) ) {
 		pauseCount++;
-		console.log("pause: " + pauseCount);
+		// console.log("pause: " + pauseCount);
 
 		// in the beginning
 		// assign final_script to my_span
@@ -120,7 +121,17 @@ function update() {
 				my_span.innerText = final_script;
 				my_span.innerText += '\n';
 				firstHappened = true;
-				console.log("only once!");
+				// console.log("only once!");
+
+				var msg = {
+					'type': 'toExamine',
+					'text': final_script
+				};
+
+				if(ws){
+					sendMessage( JSON.stringify(msg) );
+					console.log("send msg to server!");
+				}
 			}
 
 		// change line!
@@ -128,29 +139,42 @@ function update() {
 			// tmpString1 = my_span.innerHTML.replace( /<br\s*[\/]?>/gm, "");	// remove line break
 			tmpString1 = tmpString1.replace( /^\s*|\s*$/g, "");		// remove white space
 
-			console.log("my_span.innerText.replace result:" + tmpString1 + ".");
-			console.log("current final_script:" + final_script + ".");
+			// console.log("my_span.innerText.replace result:" + tmpString1 + ".");
+			// console.log("current final_script:" + final_script + ".");
 
 			// if(firstHappened && !firstHappened2){
 			// 	tmpString1 += " ";
 			// 	firstHappened2 = true;
 			// }
-			if(tmpString1==final_script) console.log("same!");
+			
+			// if(tmpString1==final_script) console.log("same!");
 
 			tmpString2 = final_script.replace( tmpString1, "");
 			tmpString2 = tmpString2.replace( /^\s*|\s*$/g, "");
-			// console.log("script to add:" + tmpString2 + ".");
 
 			if(tmpString2!=""){
 				// my_span.innerHTML += " ";
-				console.log("add tmpString2:" + tmpString2 + ".");
+				// console.log("add tmpString2:" + tmpString2 + ".");
+				forExaminate.push( tmpString2 );
+
+				// send to server
+					var msg = {
+						'type': 'toExamine',
+						'text': tmpString2
+					};
+
+					if(ws){
+						sendMessage( JSON.stringify(msg) );
+						console.log("send msg to server!");
+					}
+
 				var lChar = my_span.innerText.match(/.$/);
 				// my_span.innerText = my_span.innerText.replace( /.$/, lChar + " " + tmpString2);
 				my_span.innerText += tmpString2;
 				my_span.innerText += '\n';
 
-				console.log("new input!");
-				console.log("my_span.innerText result:" + my_span.innerText + ".");
+				// console.log("new input!");
+				// console.log("my_span.innerText result:" + my_span.innerText + ".");
 			}
 		recog_timestamp = Date.now();
 	}
