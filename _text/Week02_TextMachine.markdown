@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week02 - How my Nonsense Diary knows you
+title: Week02 - How Nonsense Diary knows you
 date: 2015-09-23 17:59:00
 ---
 
